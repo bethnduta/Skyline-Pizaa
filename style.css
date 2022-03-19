@@ -36,7 +36,7 @@ section{
     margin-top: 8rem;
 }
 
-section h4{
+/*section h4{
     width: 50%;
     font-size: 3rem;
     color: var(--clr5);
@@ -45,7 +45,7 @@ section h4{
     align-items: center;
     letter-spacing: .1rem;
     background: var(--clr3);
-}
+}*/
 
 section h3{
     font-size: 3rem;
@@ -235,6 +235,7 @@ section h4{
 .in-conte img{
     width: 20rem;
     height: auto;
+    border-radius: 9%;
 }
 .in-conte p{
     color: var(--clr3);
@@ -281,7 +282,16 @@ section h4{
         right: 5rem;
         transition: .4s ease-in;
     }
-    .home-content{
+    .home-content,.service-content,.inner-blog,.menu-content{
         display: inline-block;
+    }
+    .about-section{
+        display: inline-block;
+    }
+    .home.home-content{
+        text-align: center;
+    }
+    .home .inner-content-img img{
+        width: 35rem;
     }
 }
