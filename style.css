@@ -281,4 +281,7 @@ section h4{
         right: 5rem;
         transition: .4s ease-in;
     }
+    .home-content{
+        display: inline-block;
+    }
 }
