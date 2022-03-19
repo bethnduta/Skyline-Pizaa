@@ -21,7 +21,6 @@ html{
     font-size: 65%;
     scroll-behavior: smooth;
     scroll-padding-top: 8rem;
-    overflow: hidden;
 }
 
 html::-webkit-scrollbar{
@@ -35,6 +34,17 @@ html::-webkit-scrollbar-thumb{
 section{
     padding: 4rem 9%;
     margin-top: 8rem;
+}
+
+section h4{
+    width: 50%;
+    font-size: 3rem;
+    color: var(--clr5);
+    text-transform: none;
+    text-align: center;
+    align-items: center;
+    letter-spacing: .1rem;
+    background: var(--clr3);
 }
 
 section h3{
@@ -176,6 +186,34 @@ section h4{
     animation: icon 5s ease infinite;
 }
 
+.service-content{
+    padding: 1rem o;
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr 1.2fr;
+    grid-gap: 1rem;
+}
+
+.inner-cont{
+    padding: 3rem 2rem;
+    text-align: center;
+    border: 1px solid var(--clr3);
+    background: #eee;
+}
+
+.inner-cont:hover{
+    background: var(--clr1);
+    transition: .5s ease all;
+}
+
+.inner-cont img{
+    width: 15rem;
+    height: 15rem;
+}
+
+.inner-cont p{
+    font-size: 1.4rem;
+    color: var(--clr3);
+}
 
 /*- @madia query ---*/
 @media(max-width:991px){
