@@ -66,6 +66,30 @@ section h4{
     background: var(--clr4);
 }
 
+.btn{
+    margin-top: 2rem;
+    padding: 1.3rem 4rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    font-weight: 500;
+    color: var(--clr3);
+    background: var(--clr2);
+    border: none;
+    border-radius: .5rem;
+    box-shadow: 0 2rem 2rem rgba(0,0,0,0.1);
+    transition: all .3s ease;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn:hover{
+    background-color: var(--clr3);
+    box-shadow: 0 2rem 2rem rgba(255, 85, 94, 0.4);
+    color: var(--clr2);
+    transform: translateY(-1);
+}
+
 .head{
     position: fixed;
     top: 0;
@@ -119,6 +143,37 @@ section h4{
     text-transform: none;
     font-size: 1.5rem;
     color: #fff;
+}
+/*home section*/
+.home{
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img/pizza.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.home-content{
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr;
+}
+
+.inner-content{
+    max-width: 90rem;
+    margin-top: 20rem;
+    text-align: center;
+}
+.inner-content-img{
+    margin-top: 2rem;
+}
+
+.inner-content i{
+    color:var(--clr4);
+} 
+
+.inner-content-img img{
+    width: 45rem;
+    height: auto;
+    animation: icon 5s ease infinite;
 }
 
 
