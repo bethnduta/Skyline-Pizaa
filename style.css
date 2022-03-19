@@ -28,7 +28,7 @@ html::-webkit-scrollbar{
 }
 
 html::-webkit-scrollbar-thumb{
-    background: var(--clr5);
+    background: var(--clr1);
 }
 
 section{
