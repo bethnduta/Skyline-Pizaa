@@ -32,6 +32,40 @@ html::-webkit-scrollbar-thumb{
     background: var(--clr5);
 }
 
+section{
+    padding: 4rem 9%;
+    margin-top: 8rem;
+}
+
+section h3{
+    font-size: 3rem;
+    color: var(--clr2);
+    text-transform: none;
+    text-align: center;
+    letter-spacing: 2rem;
+}
+
+section p{
+    color: var(--clr2);
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    line-height: 2.5rem;
+    word-wrap: normal;
+}
+
+section h4{
+    margin: 0 0 1rem 25rem;
+    padding: 2rem;
+    width: 50%;
+    font-size: 3rem;
+    color: var(--clr2);
+    text-transform: none;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 2rem;
+    background: var(--clr4);
+}
+
 .head{
     position: fixed;
     top: 0;
