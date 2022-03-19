@@ -1,35 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+:root{
+    --clr1:#f95b11;
+    --clr2:#fff;
+    --clr3:#080808;
+    --clr4:#f4241d;
+    --clr5:limegreen;
+}
+
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif, 'poppins';
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
-.header{
-    height: 100vh;
-    width: 100%;
-    justify-content: center;
+html{
+    font-size: 65%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+    overflow: hidden;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--clr5);
+}
+
+.head{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    background: var(--clr5);
+    color: var(--clr2);
+    padding: 3rem 9%;
     align-items: center;
+    justify-content: space-between;
 }
- .navbar{
-     display: flex;
-     margin: 12px 14px;
-     background-color: rgb(255, 0, 0);
-     color: white;
- }
 
- .navbar ul li{
-     display: inline-block;
-     text-decoration: none;
-     list-style: none;
-     margin: 20px;
- }
+.head h1{
+    font-size: 2.5rem;
+}
 
- .navbar ul li a{
-     text-decoration: none;
-     color: white;
- }
+.head .navbar a{
+    color: var(--clr2);
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0 2rem;
+}
 
- .navbar ul li ::hover{
-     color: black;
- }
+.head .navbar a:hover{
+    color: var(--clr3);
+    transition: .4s ease;
+}
+
+.head .side-bar i{
+    padding: 1.5rem;
+    font-size: 2.1rem;
+    border: none;
+    background: var(--clr2);
+    color: var(--clr4);
+}
+
+.head .side-bar i:hover{
+    background: var(--clr3);
+    color: var(--clr4);
+}
+#bars{
+    display: none;
+}
+
+.search-bar input{
+    width: 100%;
+    background: none;
+    border: hidden;
+    text-transform: none;
+    font-size: 1.5rem;
+    color: #fff;
+}
