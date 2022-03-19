@@ -215,9 +215,31 @@ section h4{
     color: var(--clr3);
 }
 /*menu section */
-
-
-/*- @madia query ---*/
+.menu-content{
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr 1.2fr;
+    grid-gap: 1rem;
+    flex-wrap: wrap;
+}
+.in-conte{
+    padding: 3rem 4rem;
+    text-align: center;
+    border: 2px solid var(--clr3);
+    border-radius: 8%;
+    background: #eee;
+}
+.in-conte:hover{
+    background: var(--clr4);
+    transition: 2s ease all;
+}
+.in-conte img{
+    width: 20rem;
+    height: auto;
+}
+.in-conte p{
+    color: var(--clr3);
+}
+/*- @media query ---*/
 @media(max-width:991px){
     html{
         font-size: 55%;
