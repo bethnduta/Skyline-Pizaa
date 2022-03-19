@@ -215,6 +215,8 @@ section h4{
     color: var(--clr3);
 }
 
+
+
 /*- @madia query ---*/
 @media(max-width:991px){
     html{
