@@ -253,6 +253,9 @@ section h4{
     html{
         font-size: 50%;
     }
+    section h4{
+        text-align: center;
+    }
 }
 @Media(max-width:768px){
     #bars
@@ -269,6 +272,9 @@ section h4{
         width: 100%;
         background: var(--clr3);
         font-size: 2rem;
+    }
+    section h4{
+        text-align: center;
     }
     .head .navbar a{
         margin: 2rem 2.5rem;
