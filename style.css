@@ -258,15 +258,25 @@ section h4{
     margin-bottom: 10px;
 }
 
+input,select{
+    height: 40px;
+}
+input text{
+    font-size: 16px;
+}
 .pizza{
     width: 400px;
     margin-right: 50px;
 }
 
 .form-label{
-    font-size: 10px;
+    font-size: 15px;
     margin-left: 40px;
     font-weight: 400;
+}
+
+input .number{
+    width: 90px;
 }
 /*- @media query ---*/
 @media(max-width:991px){

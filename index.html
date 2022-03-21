@@ -128,27 +128,32 @@
                     <option value="medium">Medium @ Ksh.800</option>
                     <option value="large">Large @ Ksh.1000</option>
                   </select>
-                  <label for="inputsize" class="form-label"></label>
-                <select id="inputSize" class="form-select" required>
+                  <label for="inputCrust" class="form-label"></label>
+                <select id="inputCrust" class="form-select" required>
                     <option selected>choose your preferred crust</option>
                     <option value="stuffed">stuffed crust @sh300</option>
                     <option value="crispy">crispy crust @sh 500</option>
                     <option value="cracked">cracked crust @sh 900</option>
                   </select>
-                  <select id="inputSize" class="form-select" required>
+                  <label for="inputToppings" class="form-label"></label>
+                  <select id="inputToppings" class="form-select" required>
                     <option selected>choose your pizza toppings</option>
                     <option value="mushroom">mushroom @ sh100</option>
                     <option value="onion">onion @sh50</option>
                     <option value="sausage">sausage @sh50</option>
+                    <option value="garlic">Garlic @sh50</option>
                   </select>
+
+                  <input type="number" placeholder="no of pizzas...." class="number">
             
-                  <select id="inputSize" class="form-select" required>
+                  <label for="inputDelivery"></label>
+                  <select id="inputDelivery" class="form-select" required>
                     <option selected>DElivery Options</option>
-                    <option value="mushroom">Free Delivery</option>
-                    <option value="onion">Home delivery</option>
-                    <option value="sausage">brick and mortar delivery</option>
+                    <option value="Free">Free Delivery@100</option>
+                    <option value="home">Home delivery @ sh150</option>
+                    <option value="brick">brick and mortar delivery@sh50</option>
                   </select>
-                  <button class="btn btn-success">order now</button>
+                  <button id="submit" type="submit" class="btn btn-success">Order Now</button>
                 </form>
             </div>
 

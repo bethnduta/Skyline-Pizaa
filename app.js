@@ -21,52 +21,40 @@ class orderPizza {
         this.delivery = delivery;
     }
 };
-// create prototypes that calculates prices
+// prototypes that will help calculate the prices
 orderPizza.prototype.getSizePrice = function () {
     if (this.size === "small") {
-        return 500;
+        return 550;
     } else if (this.size === "medium") {
-        return 900;
+        return 800;
     } else if (this.size === "large") {
-        return 1200;
+        return 1000;
     }else { return "choose an option"
 }};
 orderPizza.prototype.getCrustPrice = function () {
-    if (this.crust === "Wheat") {
-        return 150;
-    } else if (this.crust === "Classic") {
-        return 120;
-    } else if (this.crust === "Cheese") {
-        return 250;
-    } else if (this.crust === "Thin") {
-        return 100;
+    if (this.crust === "stuffed") {
+        return 300;
+    } else if (this.crust === "crispy") {
+        return 500;
+    } else if (this.crust === "cracked") {
+        return 900;
     }else{ return "Choose an option"
 }};
 orderPizza.prototype.getToppingsPrice = function () {
-    if (this.toppings === "Pepperoni") {
+    if (this.toppings === "mushroom") {
         return 150;
-    } else if (this.toppings === "Mushroom") {
-        return 100;
-    } else if (this.toppings === "Extra") {
-        return 120;
+    } else if (this.toppings === "onion") {
+        return 50;
     } else if (this.toppings === "Sausage") {
-        return 150;
-    } else if (this.toppings === "Onions") {
-        return 50;
-    } else if (this.toppings === "Olives") {
-        return 80;
-    } else if (this.toppings === "Green") {
-        return 50;
-    } else if (this.toppings === "Garlic") {
         return 50;
     }else{return "Choose an option"
 }};
 orderPizza.prototype.priceOfDelivery = function () {
-    if (this.delivery === "Hand") {
+    if (this.delivery === "Free") {
         return 0;
-    } else if (this.delivery === "Remote") {
+    } else if (this.delivery === "home") {
         return Math.floor(Math.random()*200);
-    }
+    }else {return "choose delivery option"}
 };
 // get user values
 $(document).ready(function () {
@@ -92,4 +80,4 @@ $(document).ready(function () {
         window.alert("Your total order will be " + (totalPrice + newOrderPizza.priceOfDelivery()));
     });
     });
-});
+})
