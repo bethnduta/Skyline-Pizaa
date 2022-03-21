@@ -1,17 +1,4 @@
-let searchbtn = document.querySelector('#search');
-let searchform = document.querySelector('.head.search-bar');
-
-searchbtn.onclick = () => {
-    searchfrm.classList.toggle('active');
-    menu.classList.remove('active');
-}
-
-let menu = document.querySelector('.head .navbar');
-menu.onclick = () => {
-    menu.classList.toggle('active');
-    searchfrm.classList.remove('active');
-
-    // create object constructor for pizza orders
+// create object constructor for pizza orders
 class orderPizza {
     constructor(size, crust, toppings, numberOfPizza, delivery) {
         this.size = size;
@@ -21,40 +8,52 @@ class orderPizza {
         this.delivery = delivery;
     }
 };
-// prototypes that will help calculate the prices
+// create prototypes that calculates prices
 orderPizza.prototype.getSizePrice = function () {
     if (this.size === "small") {
-        return 550;
+        return 500;
     } else if (this.size === "medium") {
-        return 800;
+        return 900;
     } else if (this.size === "large") {
-        return 1000;
+        return 1200;
     }else { return "choose an option"
 }};
 orderPizza.prototype.getCrustPrice = function () {
-    if (this.crust === "stuffed") {
-        return 300;
-    } else if (this.crust === "crispy") {
-        return 500;
-    } else if (this.crust === "cracked") {
-        return 900;
+    if (this.crust === "Wheat") {
+        return 150;
+    } else if (this.crust === "Classic") {
+        return 120;
+    } else if (this.crust === "Cheese") {
+        return 250;
+    } else if (this.crust === "Thin") {
+        return 100;
     }else{ return "Choose an option"
 }};
 orderPizza.prototype.getToppingsPrice = function () {
-    if (this.toppings === "mushroom") {
+    if (this.toppings === "Pepperoni") {
         return 150;
-    } else if (this.toppings === "onion") {
-        return 50;
+    } else if (this.toppings === "Mushroom") {
+        return 100;
+    } else if (this.toppings === "Extra") {
+        return 120;
     } else if (this.toppings === "Sausage") {
+        return 150;
+    } else if (this.toppings === "Onions") {
+        return 50;
+    } else if (this.toppings === "Olives") {
+        return 80;
+    } else if (this.toppings === "Green") {
+        return 50;
+    } else if (this.toppings === "Garlic") {
         return 50;
     }else{return "Choose an option"
 }};
 orderPizza.prototype.priceOfDelivery = function () {
-    if (this.delivery === "Free") {
+    if (this.delivery === "Hand") {
         return 0;
-    } else if (this.delivery === "home") {
+    } else if (this.delivery === "Remote") {
         return Math.floor(Math.random()*200);
-    }else {return "choose delivery option"}
+    }
 };
 // get user values
 $(document).ready(function () {
@@ -78,6 +77,5 @@ $(document).ready(function () {
         var keyedAddress = $("#inputAddress").val();
         window.alert("Hey" + " " + keyedName + " " + " Your order will be ready in 25 mins and will be delivered to" + " " + keyedAddress + " " + "in the next 45 mins.")
         window.alert("Your total order will be " + (totalPrice + newOrderPizza.priceOfDelivery()));
-    });
-    });
-})
+    });});
+});

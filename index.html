@@ -23,7 +23,7 @@
             <a href="#about">About</a>
             <a href="#service">Services</a>
             <a href="#menu">menu</a>
-            <a href="#order now">order now</a>
+            <a href="#order">order now</a>
             <a href="#contact">contact</a>
         </nav>
         <!--<div class="side-bar">
@@ -115,50 +115,62 @@
 
     <!--Order Section-->
     <section class="orderNow" id="order">
-        <h4>Order Now</h4>
-        <div class="content">
+        <div class="OrderNow">
+            <h4>Order Now</h4>
+            <div class="ordadd">
             <div class="order">
-                <h2>order pizza</h2>
-                <p></p>
-                <form action="">
+                <p id="customize">Customize your pizza</p>
+                <form class="custom">
+                <div class="form-group mt-2">
                     <label for="inputsize" class="form-label"></label>
-                <select id="inputSize" class="form-select" required>
-                    <option selected>select your pizza size</option>
-                    <option value="small">Small @ Ksh.550</option>
-                    <option value="medium">Medium @ Ksh.800</option>
-                    <option value="large">Large @ Ksh.1000</option>
-                  </select>
-                  <label for="inputCrust" class="form-label"></label>
-                <select id="inputCrust" class="form-select" required>
-                    <option selected>choose your preferred crust</option>
-                    <option value="stuffed">stuffed crust @sh300</option>
-                    <option value="crispy">crispy crust @sh 500</option>
-                    <option value="cracked">cracked crust @sh 900</option>
-                  </select>
-                  <label for="inputToppings" class="form-label"></label>
-                  <select id="inputToppings" class="form-select" required>
-                    <option selected>choose your pizza toppings</option>
-                    <option value="mushroom">mushroom @ sh100</option>
-                    <option value="onion">onion @sh50</option>
-                    <option value="sausage">sausage @sh50</option>
-                    <option value="garlic">Garlic @sh50</option>
-                  </select>
-
-                  <input type="number" placeholder="no of pizzas...." class="number">
-            
-                  <label for="inputDelivery"></label>
-                  <select id="inputDelivery" class="form-select" required>
-                    <option selected>DElivery Options</option>
-                    <option value="Free">Free Delivery@100</option>
-                    <option value="home">Home delivery @ sh150</option>
-                    <option value="brick">brick and mortar delivery@sh50</option>
-                  </select>
-                  <button id="submit" type="submit" class="btn btn-success">Order Now</button>
+                    <select id="inputSize" class="form-select" required>
+                        <option selected>Choose pizza size</option>
+                        <option value="small">Small @ Ksh.500</option>
+                        <option value="medium">Medium @ Ksh.900</option>
+                        <option value="large">Large @ Ksh.1200</option>
+                      </select>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="inputcrust" class="form-label"></label>
+                    <select id="inputCrust" class="form-select" required>
+                        <option selected>Select crust</option>
+                        <option value="Wheat">Wheat thin crust @ Ksh.150</option>
+                        <option value="Classic">Classic Hand Tossed crust @ Ksh.120</option>
+                        <option value="Cheese">Cheese Burst crust @ Ksh.250</option>
+                        <option value="Thin">Thin crust @Ksh.100</option>
+                      </select>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="inputtoppings" class="form-label"></label>
+                    <select id="inputToppings" class="form-select" required>
+                        <option selected>Choose toppings</option>
+                        <option value="Pepperoni">Pepperoni @ Ksh.150</option>
+                        <option value="Mushroom">Mushroom @ Ksh.100</option>   
+                        <option value="Extra">Extra cheese @ Ksh.120</option>
+                        <option value="Sausage">Sausage @ Ksh.150</option>
+                        <option value="Onions"> Extra Onions @ Ksh.50</option>
+                        <option value="Olives">Black olives @ Ksh.80</option>
+                        <option value="Green">Green pepper @ Ksh.50</option>
+                        <option value="Garlic">Fresh garlic @ Ksh.50</option>
+                    </select>
+                </div><br>
+                <div class="form-group mt-2">
+                    <input type="number" id="number" class="form-control" placeholder="Number of pizzas..." aria-label="number" required>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="inputdelivery" class="form-label"></label>
+                    <select id="inputDelivery" class="form-select" required>
+                        <option selected>Delivery option</option>
+                        <option value="Remote">Remote delivery</option>
+                        <option value="Hand">Hand-picked</option>
+                    </select>
+                </div><br>
+                <div class="col-12">
+                    <button id="order" type="submit" class="btn btn-primary">Order Now</button>
+                </div>
                 </form>
             </div>
-
-            <br><br>
-            <div class="pizza">
+            <div class="address">
                 <p id="customize">Enter your address</p>
             <form class="row g-3">
                 <div class="col-md-12">
@@ -170,9 +182,9 @@
                     <input type="number" class="form-control" id="inputNumber" placeholder="Phone number">
                 </div>
                 <div class="col-md-12">
-                    <label for="inputCity" class="form-label">Town</label>
+                    <label for="inputCity" class="form-label">City</label>
                     <select id="inputCity" class="form-select">
-                        <option selected>Select town...</option>
+                        <option selected>Choose...</option>
                         <option>Kisumu</option>
                         <option>Nairobi</option>
                         <option>Mombasa</option>
@@ -180,20 +192,19 @@
                       </select>
                   </div>
                 <div class="col-12">
-                  <label for="inputAddress" class="form-label">Address 1</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="Roysambu estate">
+                  <label for="inputAddress" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="Donholm,Phase 5">
                 </div>
                 <div class="col-12">
                   <label for="inputAddress2" class="form-label">Address 2</label>
-                  <input type="text" class="form-control" id="inputAddress2" placeholder="Name of the Estate,Apartment name, Building">
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
                 </div>
                 <div class="col-12">
-                  <button id="submit" type="submit" class="btn btn-success">Order Now</button>
+                  <button id="submit" type="submit" class="btn btn-primary">Order Now</button>
                 </div>
             </form>
-
             </div>
-
+            </div>
         </div>
     </section>
 
