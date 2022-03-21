@@ -90,5 +90,6 @@ $(document).ready(function () {
         var keyedAddress = $("#inputAddress").val();
         window.alert("Hey" + " " + keyedName + " " + " Your order will be ready in 25 mins and will be delivered to" + " " + keyedAddress + " " + "in the next 45 mins.")
         window.alert("Your total order will be " + (totalPrice + newOrderPizza.priceOfDelivery()));
-    });});
+    });
+    });
 });
