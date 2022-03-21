@@ -76,12 +76,12 @@ section h4{
     background: var(--clr4);
 }
 
-.btn{
+.btn, #submit, #order{
     margin-top: 2rem;
     padding: 1.3rem 4rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
-    letter-spacing: 1rem;
+    letter-spacing: 8px;
     font-weight: 500;
     color: var(--clr3);
     background: var(--clr2);
@@ -123,6 +123,7 @@ section h4{
     font-size: 1.6rem;
     font-weight: 600;
     margin: 0 2rem;
+    text-decoration: none;
 }
 
 .head .navbar a:hover{
@@ -242,10 +243,16 @@ section h4{
 }
 
 
-/*display section*/
+/*display section
 .content{
     display: flex;
     justify-content: space-between;
+}*/
+
+.orderNow{
+    background-color: #08021f;
+    color: var(--clr2);
+    font-size: 16px;
 }
 
 .order{
@@ -272,51 +279,18 @@ input text{
 .form-label{
     font-size: 15px;
     margin-left: 40px;
-    font-weight: 400;
+    font-weight: 200;
 }
 
 input .number{
     width: 90px;
 }
 
-#name{
-    font-weight:900;
-    font-size: 50px;
-}
-.pizzquo{
-    display:flex;
-    justify-content: space-between;
-}
-#hpizz{
-    height:600px;
-    width:700px;
-}
-#pizztext{
-    margin-top: 250px;
-    margin-right:80px;
-    margin-left:80px;
-    font-weight: 800;
-}
-#menu{
-    font-size:50px;
-    font-weight:500;
-    text-align:center;
-    background-color:#39762F;
-    color:white;
-}
-#pizzas{
-    height:300px;
-    padding: 10px;
-    border-radius: 40px;
-}
-h5{
-    text-align:center;
-}
 .ordadd{
     display:flex;
     justify-content: space-between;
 }
-#customize{
+#pizza{
     font-size: 30px;
     margin-left:40px;
     font-weight:400;
@@ -329,50 +303,19 @@ h5{
     width:400px;
     margin-right: 50px;
 }
-.socials{
-    display:flex;
-    flex-direction: column;
-    margin-left:50px;
-}
+
 #media{
     height:100px;
     width:100px;
 }
-.vl{
-    border-left: 6px solid green;
-    height: 350px;
-    margin-left:250px;
-    margin-top:-350px;
-}
+
 .message{
     float:right;
     margin-top: -350px;
     margin-right:50px;
 }
-#cmessage{
-    color:solid green;
-    font-size:30px;
-    font-weight:500;
-}
-#vl2{
-    border-right: 6px solid green;
-    height:550px;
-    margin-right:400px;
-    margin-top:-420px;
-}
-.tagline{
-    display:inline-block;
-    text-align:center;
-    margin-left:380px;
-    margin-top:-500px;
-}
-#tag{
-    font-weight:500;
-    font-size:40px;
-}
-#send{
-    background-color: solid green;;
-}
+
+
 /*- @media query ---*/
 @media(max-width:991px){
     html{

@@ -1,4 +1,4 @@
-// create object constructor for pizza orders
+//object constructor for pizza orders
 class orderPizza {
     constructor(size, crust, toppings, numberOfPizza, delivery) {
         this.size = size;
@@ -8,7 +8,7 @@ class orderPizza {
         this.delivery = delivery;
     }
 };
-// create prototypes that calculates prices
+//prototypes to calculates prices
 orderPizza.prototype.getSizePrice = function () {
     if (this.size === "small") {
         return 500;
@@ -19,31 +19,21 @@ orderPizza.prototype.getSizePrice = function () {
     }else { return "choose an option"
 }};
 orderPizza.prototype.getCrustPrice = function () {
-    if (this.crust === "Wheat") {
+    if (this.crust === "stuffed") {
         return 150;
-    } else if (this.crust === "Classic") {
-        return 120;
-    } else if (this.crust === "Cheese") {
+    } else if (this.crust === "crispy") {
         return 250;
-    } else if (this.crust === "Thin") {
+    } else if (this.crust === "cracked") {
         return 100;
     }else{ return "Choose an option"
 }};
 orderPizza.prototype.getToppingsPrice = function () {
-    if (this.toppings === "Pepperoni") {
+    if (this.toppings === "mushroom") {
         return 150;
-    } else if (this.toppings === "Mushroom") {
+    } else if (this.toppings === "onion") {
         return 100;
-    } else if (this.toppings === "Extra") {
-        return 120;
     } else if (this.toppings === "Sausage") {
         return 150;
-    } else if (this.toppings === "Onions") {
-        return 50;
-    } else if (this.toppings === "Olives") {
-        return 80;
-    } else if (this.toppings === "Green") {
-        return 50;
     } else if (this.toppings === "Garlic") {
         return 50;
     }else{return "Choose an option"
@@ -55,7 +45,7 @@ orderPizza.prototype.priceOfDelivery = function () {
         return Math.floor(Math.random()*200);
     }
 };
-// get user values
+// user values
 $(document).ready(function () {
     $(".custom").submit(function (event) {
         event.preventDefault();
@@ -68,14 +58,15 @@ $(document).ready(function () {
         var newOrderPizza = new orderPizza(size, crust, toppings, numberOfPizza, delivery);
         var totalPrice = (newOrderPizza.getSizePrice()+newOrderPizza.getCrustPrice()+newOrderPizza.getToppingsPrice())*numberOfPizza;
 
-        window.alert("Hi! You have ordered "+numberOfPizza+ " " +size+ " pizzas, with a " + crust +" crust and "+toppings + " toppings!");
-        window.alert("The total cost is  " + totalPrice + " /= " + " For Delivery services kindly fill the form below");
+        window.alert("Hi! You have ordered " + numberOfPizza + " " + size + " pizzas, with a " + crust + " crust and " + toppings + " toppings!" );
+        
+        window.alert("The total cost is  " + totalPrice + " /= " + " fill the form below to get your goods delivered");
     
     $("#submit").click(function (event) {
         event.preventDefault();
         var keyedName = $("#inputName").val();
         var keyedAddress = $("#inputAddress").val();
-        window.alert("Hey" + " " + keyedName + " " + " Your order will be ready in 25 mins and will be delivered to" + " " + keyedAddress + " " + "in the next 45 mins.")
+        window.alert("Hey" + " " + keyedName + " " + " we have received your order and you'll receive it" + " " + keyedAddress + " " + "in a few depending on your location")
         window.alert("Your total order will be " + (totalPrice + newOrderPizza.priceOfDelivery()));
     });});
 });
